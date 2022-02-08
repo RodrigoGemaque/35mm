@@ -3,4 +3,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  # gem human routes config
+  route :login do
+    create as: "login"
+  end
+
+  root "home#index"   
 end
